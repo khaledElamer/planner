@@ -35,7 +35,7 @@ public class CompanyValuesController {
     @DeleteMapping("company_values-delete-by-id/{valueId}")
     public Response<Object> DeleteValueById(@PathVariable int valueId)    {
         companyValuesRepository.deleteById(valueId);
-        return new Response<>(null,"Saved Successfully",true);
+        return new Response<>(null,"deleted Successfully",true);
     }
 
 
